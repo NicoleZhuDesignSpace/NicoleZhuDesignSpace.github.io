@@ -1,2 +1,2 @@
-# WebDesignPrac.github.io
+# NicoleZhuDesignSpace.github.io
 Web Design Practice
