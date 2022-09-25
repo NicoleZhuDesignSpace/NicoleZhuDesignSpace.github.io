@@ -1,0 +1,100 @@
+/* Style the body with the following:
+Default text is Verdana font with Arial as a fallback option
+There is a 25px margin on the top and sides.  None on the bottom. 
+*/
+body{
+    font-family: Verdana, Arial;
+    margin: 25px 25px 0 25px;
+}
+
+/* Style the level 2 headings with the following:
+Text is 32px */
+h1{
+    font-size:48px;
+    color:blue;
+    padding:15px;
+}
+
+h2{
+    font-size:32px;
+}
+/* Style the paragraphs with the following:
+
+Text is 24px
+There is 15px padding on the bottom and left only */
+p{
+    font-size: 24px;
+    padding:0 0 15px 15px;
+}
+
+/* Style the paragraphs with the following:
+
+Text is 24px
+There is 15px padding on the bottom and left only */
+
+img{
+    width:350px;
+    border: 10px dashed black;
+
+}
+
+
+/* All divs must:
+
+Be at least 100px tall (but will automatically be taller if needed)
+Have 20px padding on all sides
+Have a 3px solid white border on all sides. */
+
+div{
+    min-height:100px;
+    padding:20px;
+    border: 3px solid white;
+}
+
+/* Style the red div with the following:
+
+Background color is a hex value for any light red
+Text is aligned on the right side 
+A left margin of 50px
+A border of 3px on the bottom and 10px on the left; */
+/* question:what's the difference between .red div and div. red  */
+div.red{
+    background-color: #c18181; 
+    text-align: right;
+    margin-left: 50px;
+    border-bottom:3px;
+    border-left:10px;
+}
+
+
+/* Background color is a hex value for any light blue
+Text is aligned on the left side
+A right margin of 50px
+A  border of 10px on the right and 3px on the bottom; */
+
+div.blue{
+    background-color: #69b4e7;
+    text-align: left;
+    margin-right:50px;
+    border-right:10px;
+    border-bottom:3px;
+}
+
+/* All span elements should:
+
+Be underlined
+Be all uppercase */
+span{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/* The footer should: */
+
+/* Use a gradient background (Links to an external site.) that starts at #000000, goes to #0000ff at 25,  #0066ff at 70, and ends back at #000000. */
+
+footer{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, #000000 0%, #0000FF 25%, #0066FF 70%, #000000 100%);
+}
+
