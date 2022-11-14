@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Homepage</title>
+
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<!-- Google tag (gtag.js) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CL25GWVZK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7CL25GWVZK');
+</script>
+
+<body class="grid-container">
   <div class="skip"><a href="#main">skip to Main Content</a></div>
   <header>
     <nav class="sticky">
@@ -32,6 +45,7 @@
           and am excited about working in a group in which everyone is enthusiastic 
           about what they and their colleagues are doing. ‍I anticipate hearing from you!
       </p>
+      <aside><p>Check more work at my <a class="github" href="https://github.com/NicoleZhuDesignSpace/NicoleZhuDesignSpace.github.io" >Github</a> </p></aside>
       <h2> Photography Work </h2>
       <div class="gallery">
         <figure id='galleryItem1'>
@@ -71,9 +85,12 @@
         <img src="images/PhotographyGalleyPic_9.JPG" class= "galleryImage" alt="Window with yellow leaves">
         </figure>
       </div>
+    
   </main>
   <footer>
-    <p>Footer</p>
+    <p>Thanks for viewing and feel free to contact me via email</p>
+    <img class="footerImage" src = "images/envelope-regular.svg" alt="Email Logo"/>
+    <p class="email">zhihuizh@umich.edu</p>
   </footer>
 
 </body>
