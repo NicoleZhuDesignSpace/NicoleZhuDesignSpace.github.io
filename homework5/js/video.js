@@ -55,14 +55,10 @@ document.getElementById("mute").addEventListener("click", function() {
 	if (vid.muted == true) {
 		vid.muted = false;
 		document.getElementById("mute").innerHTML = "Mute";
-        document.getElementById("volume").innerHTML = "100%";
-        slider.value=100;
 	}
 	else {
 		vid.muted = true;
 		document.getElementById("mute").innerHTML = "Unmute";
-        document.getElementById("volume").innerHTML = "0%";
-        slider.value=0;
 	}
 });
 
