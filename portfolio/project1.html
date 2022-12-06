@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CL25GWVZK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7CL25GWVZK');
+</script>
 <title>Project1</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<link rel="icon" type="image/png" href="images/logo.png">
 </head>
 <body class="grid-container">
   <div class="skip"><a href="#main">skip to Main Content</a></div>
-  <header>
-    <nav>
-      <ul>
-        <li><a class='global_nav' href="index.html">About Me</a></li>
-        <li><a class='current' href="project1.html">Project1</a></li>
-        <li><a class='global_nav' href="project2.html">Project2</a></li>
-        <li><a class='global_nav' href="project3.html">Project3</a></li>
-      </ul>
+  <header class="grid-item1">
+    <nav class="sticky nav-container">
+        <a href="index.html">About Me</a>
+        <a class='current ' href="project1.html">Project1</a>
+        <a  href="project2.html">Project2</a>
+        <a  href="project3.html">Project3</a>
     </nav>
   </header> 
-  <main id="main">
-      <h1>UX Designer for Eventelper</h1>
+  <main id="small-container">
+    <h1>UX Designer for Eventelper</h1>
+      <div id="left">
       <h2>Project Introduction</h2>
       <p>Currently, whenever students want to participate in some events, they need to spend 
           a lot of effort on checking emails, Slack, Group Me, and other different social 
@@ -37,11 +46,13 @@
           the all-in-one app for students who are dealing with on-campus events relative 
           things.
       </p>
+      </div>
+      <div id="right">
       <h2> Hi-Fi </h2>
       <img class='projectImage' src="images/Project1.png" alt="Eventepler Landing Page">
-  
+      </div>
   </main>
-  <footer>
+  <footer class="grid-item2">
     <p>Thanks for viewing and feel free to contact me via email</p>
     <img class="footerImage" src = "images/envelope-regular.svg" alt="Email Logo"/>
     <p class="email">zhihuizh@umich.edu</p>

@@ -1,41 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CL25GWVZK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7CL25GWVZK');
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Homepage</title>
+<link rel="icon" type="image/png" href="images/logo.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <link rel="stylesheet" href="css/style.css">
+<script>
+  window.onbeforeunload = () => {
+for(const form of document.getElementsByTagName('form')) {
+form.reset();
+}
+}
+</script>
+
 </head>
 
 <body class="grid-container">
   <div class="skip"><a href="#main">skip to Main Content</a></div>
-  <header>
-    <nav class="sticky">
-      <ul>
-        <li><a class='current' href="index.html">About Me</a></li>
-        <li><a class='global_nav' href="project1.html">Project1</a></li>
-        <li><a class='global_nav' href="project2.html">Project2</a></li>
-        <li><a class='global_nav' href="project3.html">Project3</a></li>
-      </ul>
+  <header class="grid-item1">
+  <nav class="sticky nav-container">
+    <a class='current' href="index.html">About Me</a>
+    <a  href="project1.html">Project1</a>
+    <a  href="project2.html">Project2</a>
+    <a href="project3.html">Project3</a>
     </nav>
+
   </header>
+
   <main id="main">
       <h1>About Me</h1>
-      <p>Hi! My name is Zhihui Zhu.‍When I was a child, I would 
+      <p> Hi! My name is Zhihui Zhu.‍<br><br>When I was a child, I would 
           often spend entire afternoons investigating the stones in my garden, 
           the insects on the ground, and other common things that anyone could 
           find but most choose to ignore. As I grew up, I tried my best to remember 
           and attend to the smallest and most easily-overlooked things. So I gradually 
           become a photography lover   📷 , because that enabled me to remain observant 
-          and capture even the tiniest moments that touched me.‍Observing and learning 
+          and capture even the tiniest moments that touched me.‍ <br><br> Observing and learning 
           determines my input, but design enables my output and renders my thoughts 
           useful things. And that is my understanding of what it means to be a 
-          "designer of thinking".‍I have always believed that patience and aggression, 
-          hard work and relaxation can exist simultaneously. ‍I really look forward to 
+          "designer of thinking".‍<br><br>I have always believed that patience and aggression, 
+          hard work and relaxation can exist simultaneously.<br><br> ‍I really look forward to 
           and am excited about working in a group in which everyone is enthusiastic 
-          about what they and their colleagues are doing. ‍I anticipate hearing from you!
+          about what they and their colleagues are doing.<br> ‍<br>Feel free to leave your email and your message below, I anticipate hearing from you!
       </p>
+    
+      <form  id='contact-form' action="https://formspree.io/f/xgeqpryz"
+      method="POST" >
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." >
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+
       <aside><p>Check more work at my <a class="github" href="https://github.com/NicoleZhuDesignSpace/NicoleZhuDesignSpace.github.io" >Github</a> </p></aside>
       <h2> Photography Work </h2>
       <div class="gallery">
@@ -78,6 +114,7 @@
       </div>
     
   </main>
+
   <footer>
     <p>Thanks for viewing and feel free to contact me via email</p>
     <img class="footerImage" src = "images/envelope-regular.svg" alt="Email Logo"/>
@@ -85,5 +122,6 @@
   </footer>
 
 </body>
+
 </html>
 
